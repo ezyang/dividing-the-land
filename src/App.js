@@ -131,7 +131,45 @@ class GridForm extends Component {
 
 function App() {
   return (
-    <GridForm />
+    <div id="top">
+      <p>
+        I have been meaning to try solving a puzzle using answer set programming
+        for some time now, so when I just barely failed to
+        solve <a href="https://puzzlehunt.club.cc.cmu.edu/puzzle/15030/">the last meta "Dividing the Land"</a> from
+        CMU's puzzle hunt, I thought it would be a good test for ASP.  I
+        used <a href="https://potassco.org/">Potassco's ASP solver</a>,
+        and the <a href="https://github.com/ezyang/dividing-the-land/blob/main/dividing.lp">ASP program can be found here.</a>
+      </p>
+      <p>
+        Writing the actual constraints for this problem was actually pretty easy;
+        the hard part was getting all of the grid math correct.  This <a href="https://www.redblobgames.com/grids/hexagons/">guide
+        to hexagonal grids</a> was a big help to getting started up, but I had another
+        big problem which was how to tell if I had coded everything up correctly.
+        This gave me the idea that I should write a small <a href="https://d3js.org/">d3.js</a> visualization that took
+        the output from the clingo and plotted it out.  I ended up using <a href="https://reactjs.org/">React</a> for
+        the scaffolding to get live reloading working.
+      </p>
+      <p>
+        What you see below is the set of answers our team had unlocked at the time
+        we unlocked this meta.  As you can see using the slider, there
+        are actually only eleven valid configurations that satisfy all the
+        puzzle constraints, which means it's actually possible to just brute
+        force the meta at this point.
+      </p>
+      <p>
+        That's pretty cool, but the problem with all solvers like this is whether or
+        not you can code a working solver before someone manages to solve it by hand.
+        I'd say you have to be code it out in an hour or less for it to be worth it.
+        This particular solution took me an entire afternoon, though I was learning
+        ASP at the same time.  Definitely looking for ways to make the process faster.
+        It would be nice to have a Colab-like UI for building quick visualizations
+        on top of ASP models.
+      </p>
+      <p>
+        Full source at <a href="https://github.com/ezyang/dividing-the-land">GitHub</a>.
+      </p>
+      <GridForm />
+    </div>
   );
 }
 

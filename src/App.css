@@ -1,2 +1,3 @@
 rect { stroke: black; fill: white; }
 text { text-anchor: middle; }
+#top { max-width: 60em; }
