@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,KAAO,WAAa,CAAE,SAAa,CACnC,KAAO,kBAAqB","file":"main.2750f4ff.chunk.css","sourcesContent":["rect { stroke: black; fill: white; }\ntext { text-anchor: middle; }\n"]}
