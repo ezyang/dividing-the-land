@@ -1,4 +1,13 @@
-# Getting Started with Create React App
+# asplab
+
+This repo uses answer set programming (ASP) to brute force solution to
+[Dividing the Land](https://puzzlehunt.club.cc.cmu.edu/puzzle/15030/)
+the third meta in the 2020 CMU Puzzle Hunt.  I was a bit curious to
+see how well ASP would do to solve this sort of problem, and at least
+for this one it did a pretty good job!
+
+The ASP program is in `dividing.lp` and then there is a small d3.js
+program in `src/App.js` to render the results.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
